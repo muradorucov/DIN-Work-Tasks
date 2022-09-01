@@ -1,0 +1,73 @@
+/* <<<====== Navbar start ======>>> */
+
+.navbar ul {
+    width: 280px;
+}
+.navbar li {
+    margin-bottom: 47px;
+    align-items: flex-start;
+}
+
+.navbar li:first-child {
+    margin-bottom: 25px;
+}
+
+.navbar li i {
+    font-size: 30px;
+    border-radius: 50%;
+    background-color: #f3f3f3;
+    padding: 7px 12px;
+    margin-left: 10px;
+    margin-right: 13px;
+}
+.navbar li span{
+    font-size: 16px;
+}
+
+.navbar .navbar-btn1{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 9px;
+}
+.navbar .navbar-btn2{
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 9px;
+    z-index: 2;
+}
+.navbar .navbar-btn1 i{
+    font-size: 26px;
+    margin-right: 13px;
+    color: #f3f3f3;
+}
+.navbar .navbar-btn2 i{
+    font-size: 26px;
+    margin-right: 13px;
+    color: #0c0c0c;
+}
+
+.navbar-btn{
+    display: block !important;
+}
+.navbar-btn-d-none{
+    display: none !important;
+}
+
+.responsive-nav{
+    width: 100% !important;
+    display: block !important;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+.nav-d-none{
+    display: none ;
+}
+
+/* <<<====== Navbar end ======>>> */

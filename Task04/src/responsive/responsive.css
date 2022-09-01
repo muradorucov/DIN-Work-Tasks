@@ -1,0 +1,276 @@
+@media screen and (min-width: 1200px){
+    .responsive-nav{
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width:800px){
+    .header p{
+        padding:14px 28px ;
+        font-size:16px ;
+    }
+
+    /*Tools start */
+    .tool input{
+        font-size: 13px;
+        padding: 7px 8px;
+    }
+    .tool button {
+        padding: 6px 6px;
+        margin: 0 3px;
+        font-size: 17px;
+    }
+    
+    .tool .info {
+        padding: 5px 16px;
+        font-size: 18px;
+    }
+    
+    .tool .btn-margin-right {
+        padding: 6px 12px;
+    }
+    
+    .tool .btn-margin-left {
+        padding: 6px 11px;
+    }
+    /*Tools end */
+
+
+    /*Contents start */
+    .content-info ul li:first-child {
+        border-top-left-radius: 17px;
+        border-bottom-left-radius: 17px
+    }
+    
+    .content-info ul li:last-child {
+        border-top-right-radius: 17px;
+        border-bottom-right-radius: 17px
+    }
+    
+    .content-info ul li {
+        padding-top: 15px;
+        padding-bottom: 23px;
+    }
+    .content-info ul li span {
+        font-size: 32px;
+    }
+    .content-info ul li p {
+        font-size: 14px;
+    }
+    /*Contents end */
+
+
+    /*Navbar start */
+    aside {
+        padding: 0;
+        padding-left: 0;
+    }
+    .navbar ul{
+        display: none;
+    }
+
+    
+    .navbar li {
+        margin-bottom: 47px;
+    }
+    
+    .navbar li:first-child {
+        margin-bottom: 25px;
+    }
+    
+    .navbar li i {
+        font-size: 28px;
+        padding: 6px 12px;
+    }
+    .navbar li span{
+        font-size: 15px;
+    }
+    .navbar .navbar-btn1{
+        display: block;
+    }
+    /*Navbar end */
+}
+
+
+@media screen and (max-width: 800px) and (min-width:544px){
+    .header p{
+        padding:14px 24px ;
+        font-size:15px ;
+    }
+    .tools input {
+        font-size: 14px;
+        width: 33%;
+    }
+    .tool .info {
+        padding: 6px 16px;
+        font-size: 18px;
+    }
+    .tool button {
+        padding: 8px 6px;
+        font-size: 15px;
+    }
+    section {
+        padding: 10px 19px;
+    }
+    .contents {
+        padding: 7px 0;
+    }
+
+    .content{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .content-info {
+        padding-bottom: 7px;
+    }
+    /*Contents start */
+    .content-info ul li:first-child {
+        border-top-left-radius: 14px;
+        border-bottom-left-radius: 14px
+    }
+    
+    .content-info ul li:last-child {
+        border-top-right-radius: 14px;
+        border-bottom-right-radius: 14px
+    }
+    
+    .content-info ul li {
+        padding-top: 13px;
+        padding-bottom: 20px;
+    }
+    .content-info ul li span {
+        font-size: 26px;
+    }
+    .content-info ul li p {
+        font-size: 13px;
+    }
+    /*Contents end */
+
+    /*Navbar start */
+    aside {
+        padding: 0;
+        padding-left: 0;
+    }
+    .navbar ul{
+        display: none;
+    }
+    
+    .navbar li {
+        margin-bottom: 47px;
+    }
+    
+    .navbar li:first-child {
+        margin-bottom: 25px;
+    }
+    
+    .navbar li i {
+        font-size: 26px;
+        padding: 6px 12px;
+    }
+    .navbar li span {
+        font-size: 14px;
+    }
+    .navbar .navbar-btn1{
+        display: block;
+        top: 8px;
+    }
+    .navbar .navbar-btn2{
+        top: 8px;
+    }
+    /*Navbar end */
+}
+
+
+@media screen and (max-width: 544px) and (min-width:344px){
+    .header p{
+        padding:11px 23px ;
+        font-size:13px ;
+    }
+    .tools input {
+        font-size: 13px;
+        width: 20%;
+    }
+    .tool .info {
+        padding: 6px 16px;
+        font-size: 18px;
+    }
+    .tool button {
+        padding: 8px 6px;
+        font-size: 15px;
+    }
+    section {
+        padding: 10px 19px;
+    }
+    .contents {
+        padding: 7px 0;
+    }
+    .content{
+        grid-template-columns: auto;
+    }
+    .content-info {
+        padding-bottom: 7px;
+    }
+     /*Contents start */
+     .content-info ul li:first-child {
+        border-top-left-radius: 11px;
+        border-bottom-left-radius: 11px
+    }
+    
+    .content-info ul li:last-child {
+        border-top-right-radius: 11px;
+        border-bottom-right-radius: 11px
+    }
+    
+    .content-info ul li {
+        padding-top: 10px;
+        padding-bottom: 18px;
+    }
+    .content-info ul li span {
+        font-size: 15px;
+    }
+    .content-info ul li p {
+        font-size: 10px;
+    }
+    .btn {
+        width: 85px;
+        height: 24px;
+        font-size: 11px;
+        margin-left: 11px;
+        margin-top: 4px;
+    }
+    /*Contents end */
+    /*Navbar start */
+    aside {
+        padding: 0;
+        padding-left: 0;
+    }
+    .navbar ul{
+        display: none;
+    }
+
+    .navbar li {
+        margin-bottom: 22px;
+    }
+    
+    .navbar li:first-child {
+        margin-bottom: 22px;
+    }
+    
+    .navbar li i {
+        font-size: 22px;
+        padding: 7px 11px;
+    }
+    .navbar li span{
+        font-size: 13px;
+    }
+    .navbar .navbar-btn1{
+        display: block;
+        top: 3px;
+    }
+    .navbar .navbar-btn2{
+        top: 3px;
+    }
+
+    
+    /*Navbar end */
+}
