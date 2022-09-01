@@ -1,0 +1,44 @@
+{% extends "admin/base.html" %} {% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h4 id="my" style="margin-top: 40px;">
+                Payments Section
+            </h4>
+            <table class="table table-hover " style="margin:20px 0px; border:1px solid rgba(0,0,0,.075);">
+                <thead>
+                    <tr style="background-color: rgba(0,0,0,.075); color:blue">
+                        <th scope="col">id</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Surename</th>
+                        <th scope="col">Father's name</th>
+                        <th scope="col">Id card</th>
+                        <th scope="col">Phone number</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Month</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for payment in payments %}
+                    <tr>
+                        <td scope="row">{{payment.id}}</td>
+                        <td>{{payment.student_name}}</td>
+                        <td>{{payment.student_surename}}</td>
+                        <td>{{payment.student_fathername}}</td>
+                        <td>{{payment.student_id_card}}</td>
+                        <td>{{payment.student_phone_number}}</td>
+                        <td>{{payment.student_email}}</td>
+                        <td>{{payment.student_payment_month}}</td>
+                        <td>{{payment.student_payment_amount}} AZN</td>
+                        <td>{{payment.student_payment_date}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <!-- </div> -->
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "main/base.html" %}{% block contentmain %}
+<!-- more-info-about-us section start -->
+<section id="more-info-about-us">
+    <div class="container section-padding">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-heading">
+                    <h2 class="section-heading-h2">{{lesson.lessonname}}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="about-item">
+                    <div class="about-img ">
+                        <img src="/static/uploads/{{lesson.lesson_img}}" alt="">
+                    </div>
+                    <span>{{lesson.lesson_desc|safe}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

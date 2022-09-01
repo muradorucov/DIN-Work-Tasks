@@ -1,0 +1,43 @@
+{% extends "admin/base.html" %} {% block content %}
+<div class="adminright">
+    <h3 class="my-3" style="text-align: center;">Students</h3>
+    <hr>
+    <!-- ===== Start==== -->
+    <div class="container marg">
+        <div class="row justify-content-center">
+            <div class="col-11 ">
+                <table class="table table-hover " style="margin:35px 0px; border:1px solid rgba(0,0,0,.075);">
+                    <thead>
+                        <tr style="background-color: rgba(0,0,0,.075); color:blue">
+                            <th scope="col">id</th>
+                            <th scope="col">User Name </th>
+                            <th scope="col">Password</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">FullName</th>
+                            <th scope="col">Image</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for student in students %}
+                        <tr>
+                            <td scope="row">{{student.id}}</td>
+                            <td>{{student.studentusername}}</td>
+                            <td>{{student.studentpassword}}</td>
+                            <td>{{student.studentemail}}</td>
+                            <td>{{student.studentfullname}}</td>
+                            <td>{{student.studentimg}}</td>
+                            <td>
+                                <a href="{{url_for('studentDelete', id=student.id)}}"><i
+                                        class="bi bi-trash-fill"></i></a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ===== End==== -->
+{% endblock %}

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--== Font awesome links  ==-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+
+    <link rel="stylesheet" href="/static/main/css/style.css">
+    <link rel="stylesheet" href="/static/main/css/about.css">
+    <link rel="stylesheet" href="/static/main/css/login.css">
+
+</head>
+
+<body>
+    <!-- crumbs section start -->
+    <section id="crumbs">
+        <div class="container crumbs-bread">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-auto">
+                    <div class="crumbs-info">
+                        <span class="crumbs-home"><a href="/">Home</a></span> <i class="fas fa-angle-right"></i>
+                        <span class="crumbs-about"><a href="/payment_form">Payments</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- crumbs section end -->
+
+    <!-- Login Section start -->
+    <section id="login">
+        <div class="container section-padding">
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-login">
+                        <div class="section-heading">
+                            <h2 class="section-heading-h2">Payment Page</h2>
+                        </div>
+                        <form action="/payment_form" method="POST">
+                            <div class="form-field">
+                                <input type="text" placeholder="Name" class="form-field-input" name="student_name" required>
+                            </div>
+                            <div class="form-field">
+                                <input type="text" placeholder="Surename" class="form-field-input" name="student_surename" required>
+                            </div>
+                            <div class="form-field">
+                                <input type="text" placeholder="Father's name" class="form-field-input" name="student_fathername" required>
+                            </div>
+                            <div class="form-field">
+                                <input type="text" placeholder="Serial and number of ID card" class="form-field-input" name="student_id_card" required>
+                            </div>
+                            <div class="form-field">
+                                <input type="number" placeholder="Phone number" class="form-field-input" name="student_phone_number" required>
+                            </div>
+                            <div class="form-field">
+                                <input type="email" placeholder="Email" class="form-field-input" name="student_email" required>
+                            </div>
+                            <div class="form-field">
+                                <input type="text" placeholder="Month" class="form-field-input" name="student_payment_month" required>
+                            </div>
+                            <div class="form-field">
+                                <input type="number" placeholder="Payment amount" class="form-field-input" name="student_payment_amount" required>
+                            </div>
+                            <div class="login-bttn">
+                                <button type="submit" class="login-bttn-main" value="">
+                                    <span>Payment</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Login Section end -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

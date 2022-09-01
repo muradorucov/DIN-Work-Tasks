@@ -1,0 +1,35 @@
+{% extends "admin/base.html" %} {% block content %}
+<div class="adminright">
+    <h3 class="my-3" style="text-align: center;">Lessons</h3>
+    <hr>
+    <!-- ===== Start==== -->
+    <div class="container marg">
+        <div class="row justify-content-center">
+            <div class="col-11 ">
+                <table class="table table-hover " style="margin:35px 0px; border:1px solid rgba(0,0,0,.075);">
+                    <thead>
+                        <tr style="background-color: rgba(0,0,0,.075); color:blue">
+                            <th scope="col">id</th>
+                            <th scope="col">Leeson Name </th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for lesson in lessons %}
+                        <tr>
+                            <td scope="row">{{lesson.id}}</td>
+                            <td>{{lesson.lessonname}}</td>
+                            <td>
+                                <a href="{{url_for('lessonDeleteAdmin', id=lesson.id)}}"><i
+                                        class="bi bi-trash-fill"></i></a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ===== End==== -->
+{% endblock %}
